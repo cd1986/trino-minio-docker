@@ -46,8 +46,8 @@ services:
     volumes:
       - minio-data:/data
     environment:
-      MINIO_ACCESS_KEY: minio_access_key
-      MINIO_SECRET_KEY: minio_secret_key
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
     command: server /data
     networks:
       - trino-network
